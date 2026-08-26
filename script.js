@@ -26,15 +26,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Simple contact form UX (no backend — placeholder)
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      const original = btn.textContent;
-      btn.textContent = 'Message sent';
-      btn.disabled = true;
-      setTimeout(() => { btn.textContent = original; btn.disabled = false; form.reset(); }, 2400);
-    });
-  }
+  
 });
